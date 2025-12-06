@@ -21,11 +21,14 @@
                             blue: '#3B82F6',   // 電路藍
                             grey: '#E2E8F0',   // 鉑金灰
                             dark: '#020617',   // 更深的背景
-                            box:  '#1E293B',   // 新增：較亮的區塊底色
+                            box:  '#1E293B',   // 區塊底色
                         }
                     },
                     fontFamily: {
                         sans: ['Inter', 'Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
                     }
                 }
             }
@@ -38,6 +41,10 @@
             background-size: 40px 40px;
             background-image: linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
                               linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+        }
+        /* 自定義樣式：區塊鏈網絡背景圖 */
+        .bg-network {
+             background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%233B82F6' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
         }
         /* 平滑捲動 */
         html {
@@ -114,66 +121,74 @@
         </div>
     </section>
 
-    <section id="services" class="py-24 bg-ael-navy relative">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="services" class="py-24 bg-ael-navy relative bg-network">
+        <div class="absolute inset-0 bg-ael-navy/80 pointer-events-none"></div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-3xl font-bold text-white sm:text-4xl">核心解決方案</h2>
                 <p class="mt-4 text-lg text-ael-grey">全方位的技術與策略支援</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-ael-box/80 p-8 rounded-xl border border-ael-blue/30 hover:border-ael-blue transition-all group hover:shadow-lg hover:shadow-ael-blue/20">
-                    <div class="w-12 h-12 bg-ael-blue/20 rounded-lg flex items-center justify-center mb-6 group-hover:bg-ael-blue group-hover:text-white transition-colors text-ael-blue">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+                <div class="group relative bg-gradient-to-br from-ael-box/80 to-ael-dark/50 backdrop-blur-sm p-8 rounded-2xl border border-ael-blue/20 hover:border-ael-blue/80 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_30px_rgba(59,130,246,0.2)]">
+                    <div class="w-14 h-14 bg-ael-blue/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-ael-blue group-hover:text-white transition-colors text-ael-blue animate-pulse-slow relative overflow-hidden">
+                         <div class="absolute inset-0 bg-ael-blue/20 blur-md opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                        <svg class="w-7 h-7 relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
                     </div>
-                    <h3 class="text-xl font-bold mb-3 text-white">企業級節點架構</h3>
-                    <p class="text-sm text-ael-blue font-medium">Enterprise Node Infrastructure</p>
-                    <p class="mt-4 text-ael-grey text-sm leading-relaxed">為高頻交易打造的低延遲、高穩定性區塊鏈節點部署與維運。</p>
+                    <h3 class="text-xl font-bold mb-3 text-white tracking-tight">企業級節點架構</h3>
+                    <p class="text-xs font-semibold text-ael-blue uppercase tracking-wider mb-4">Infrastructure</p>
+                    <p class="text-ael-grey text-sm leading-relaxed opacity-80 group-hover:opacity-100 transition-opacity">為高頻交易打造的低延遲、高穩定性區塊鏈節點部署與維運。</p>
                 </div>
 
-                <div class="bg-ael-box/80 p-8 rounded-xl border border-ael-blue/30 hover:border-ael-blue transition-all group hover:shadow-lg hover:shadow-ael-blue/20">
-                    <div class="w-12 h-12 bg-ael-blue/20 rounded-lg flex items-center justify-center mb-6 group-hover:bg-ael-blue group-hover:text-white transition-colors text-ael-blue">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                <div class="group relative bg-gradient-to-br from-ael-box/80 to-ael-dark/50 backdrop-blur-sm p-8 rounded-2xl border border-ael-blue/20 hover:border-ael-blue/80 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_30px_rgba(59,130,246,0.2)]">
+                    <div class="w-14 h-14 bg-ael-blue/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-ael-blue group-hover:text-white transition-colors text-ael-blue animate-pulse-slow relative overflow-hidden" style="animation-delay: 0.2s">
+                        <div class="absolute inset-0 bg-ael-blue/20 blur-md opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                        <svg class="w-7 h-7 relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                     </div>
-                    <h3 class="text-xl font-bold mb-3 text-white">智慧合約審計與開發</h3>
-                    <p class="text-sm text-ael-blue font-medium">Smart Contract Audit & Dev</p>
-                    <p class="mt-4 text-ael-grey text-sm leading-relaxed">銀行級的程式碼審計標準，確保資產邏輯無懈可擊，杜絕安全漏洞。</p>
+                    <h3 class="text-xl font-bold mb-3 text-white tracking-tight">智慧合約審計與開發</h3>
+                    <p class="text-xs font-semibold text-ael-blue uppercase tracking-wider mb-4">Security & Audit</p>
+                    <p class="text-ael-grey text-sm leading-relaxed opacity-80 group-hover:opacity-100 transition-opacity">銀行級的程式碼審計標準，確保資產邏輯無懈可擊，杜絕安全漏洞。</p>
                 </div>
 
-                <div class="bg-ael-box/80 p-8 rounded-xl border border-ael-blue/30 hover:border-ael-blue transition-all group hover:shadow-lg hover:shadow-ael-blue/20">
-                    <div class="w-12 h-12 bg-ael-blue/20 rounded-lg flex items-center justify-center mb-6 group-hover:bg-ael-blue group-hover:text-white transition-colors text-ael-blue">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
+                <div class="group relative bg-gradient-to-br from-ael-box/80 to-ael-dark/50 backdrop-blur-sm p-8 rounded-2xl border border-ael-blue/20 hover:border-ael-blue/80 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_30px_rgba(59,130,246,0.2)]">
+                    <div class="w-14 h-14 bg-ael-blue/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-ael-blue group-hover:text-white transition-colors text-ael-blue animate-pulse-slow relative overflow-hidden" style="animation-delay: 0.4s">
+                        <div class="absolute inset-0 bg-ael-blue/20 blur-md opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                        <svg class="w-7 h-7 relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
                     </div>
-                    <h3 class="text-xl font-bold mb-3 text-white">交易所流動性解決方案</h3>
-                    <p class="text-sm text-ael-blue font-medium">Liquidity Solutions</p>
-                    <p class="mt-4 text-ael-grey text-sm leading-relaxed">協助新興資產建立健康的市場深度，優化交易體驗與滑點控制。</p>
+                    <h3 class="text-xl font-bold mb-3 text-white tracking-tight">交易所流動性解決方案</h3>
+                    <p class="text-xs font-semibold text-ael-blue uppercase tracking-wider mb-4">Liquidity</p>
+                    <p class="text-ael-grey text-sm leading-relaxed opacity-80 group-hover:opacity-100 transition-opacity">協助新興資產建立健康的市場深度，優化交易體驗與滑點控制。</p>
                 </div>
 
-                <div class="bg-ael-box/80 p-8 rounded-xl border border-ael-blue/30 hover:border-ael-blue transition-all group hover:shadow-lg hover:shadow-ael-blue/20">
-                    <div class="w-12 h-12 bg-ael-blue/20 rounded-lg flex items-center justify-center mb-6 group-hover:bg-ael-blue group-hover:text-white transition-colors text-ael-blue">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+                <div class="group relative bg-gradient-to-br from-ael-box/80 to-ael-dark/50 backdrop-blur-sm p-8 rounded-2xl border border-ael-blue/20 hover:border-ael-blue/80 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_30px_rgba(59,130,246,0.2)]">
+                    <div class="w-14 h-14 bg-ael-blue/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-ael-blue group-hover:text-white transition-colors text-ael-blue animate-pulse-slow relative overflow-hidden" style="animation-delay: 0.6s">
+                        <div class="absolute inset-0 bg-ael-blue/20 blur-md opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                        <svg class="w-7 h-7 relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
                     </div>
-                    <h3 class="text-xl font-bold mb-3 text-white">資產代幣化 (RWA)</h3>
-                    <p class="text-sm text-ael-blue font-medium">Asset Tokenization</p>
-                    <p class="mt-4 text-ael-grey text-sm leading-relaxed">將現實世界資產（房地產、債券）上鏈，設計符合法規的代幣經濟模型。</p>
+                    <h3 class="text-xl font-bold mb-3 text-white tracking-tight">資產代幣化 (RWA)</h3>
+                    <p class="text-xs font-semibold text-ael-blue uppercase tracking-wider mb-4">Tokenization</p>
+                    <p class="text-ael-grey text-sm leading-relaxed opacity-80 group-hover:opacity-100 transition-opacity">將現實世界資產（房地產、債券）上鏈，設計符合法規的代幣經濟模型。</p>
                 </div>
 
-                <div class="bg-ael-box/80 p-8 rounded-xl border border-ael-blue/30 hover:border-ael-blue transition-all group hover:shadow-lg hover:shadow-ael-blue/20">
-                    <div class="w-12 h-12 bg-ael-blue/20 rounded-lg flex items-center justify-center mb-6 group-hover:bg-ael-blue group-hover:text-white transition-colors text-ael-blue">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                <div class="group relative bg-gradient-to-br from-ael-box/80 to-ael-dark/50 backdrop-blur-sm p-8 rounded-2xl border border-ael-blue/20 hover:border-ael-blue/80 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_30px_rgba(59,130,246,0.2)]">
+                    <div class="w-14 h-14 bg-ael-blue/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-ael-blue group-hover:text-white transition-colors text-ael-blue animate-pulse-slow relative overflow-hidden" style="animation-delay: 0.8s">
+                        <div class="absolute inset-0 bg-ael-blue/20 blur-md opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                        <svg class="w-7 h-7 relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
                     </div>
-                    <h3 class="text-xl font-bold mb-3 text-white">合規與監管諮詢</h3>
-                    <p class="text-sm text-ael-blue font-medium">Compliance Tech</p>
-                    <p class="mt-4 text-ael-grey text-sm leading-relaxed">協助企業應對 AML/KYC 挑戰，確保區塊鏈業務符合各地金融監管要求。</p>
+                    <h3 class="text-xl font-bold mb-3 text-white tracking-tight">合規與監管諮詢</h3>
+                    <p class="text-xs font-semibold text-ael-blue uppercase tracking-wider mb-4">Compliance</p>
+                    <p class="text-ael-grey text-sm leading-relaxed opacity-80 group-hover:opacity-100 transition-opacity">協助企業應對 AML/KYC 挑戰，確保區塊鏈業務符合各地金融監管要求。</p>
                 </div>
 
-                <div class="bg-ael-box/80 p-8 rounded-xl border border-ael-blue/30 hover:border-ael-blue transition-all group hover:shadow-lg hover:shadow-ael-blue/20">
-                    <div class="w-12 h-12 bg-ael-blue/20 rounded-lg flex items-center justify-center mb-6 group-hover:bg-ael-blue group-hover:text-white transition-colors text-ael-blue">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z"></path></svg>
+                <div class="group relative bg-gradient-to-br from-ael-box/80 to-ael-dark/50 backdrop-blur-sm p-8 rounded-2xl border border-ael-blue/20 hover:border-ael-blue/80 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_30px_rgba(59,130,246,0.2)]">
+                    <div class="w-14 h-14 bg-ael-blue/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-ael-blue group-hover:text-white transition-colors text-ael-blue animate-pulse-slow relative overflow-hidden" style="animation-delay: 1.0s">
+                        <div class="absolute inset-0 bg-ael-blue/20 blur-md opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                        <svg class="w-7 h-7 relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z"></path></svg>
                     </div>
-                    <h3 class="text-xl font-bold mb-3 text-white">區塊鏈行銷策略</h3>
-                    <p class="text-sm text-ael-blue font-medium">Blockchain Marketing</p>
-                    <p class="mt-4 text-ael-grey text-sm leading-relaxed">精準的 Web3 市場進入策略 (GTM)，結合社群營運與品牌公關，極大化影響力。</p>
+                    <h3 class="text-xl font-bold mb-3 text-white tracking-tight">區塊鏈行銷策略</h3>
+                    <p class="text-xs font-semibold text-ael-blue uppercase tracking-wider mb-4">GTM Strategy</p>
+                    <p class="text-ael-grey text-sm leading-relaxed opacity-80 group-hover:opacity-100 transition-opacity">精準的 Web3 市場進入策略 (GTM)，結合社群營運與品牌公關，極大化影響力。</p>
                 </div>
             </div>
         </div>
