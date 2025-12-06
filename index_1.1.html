@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AEL Technology | Enterprise Blockchain Architects</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        ael: {
+                            navy: '#0F172A',   // 深海軍藍
+                            blue: '#3B82F6',   // 電路藍
+                            grey: '#E2E8F0',   // 鉑金灰
+                            dark: '#020617',   // 更深的背景
+                            box:  '#1E293B',   // 新增：較亮的區塊底色
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'Noto Sans TC', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* 自定義樣式：背景網格 */
+        .bg-grid {
+            background-size: 40px 40px;
+            background-image: linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+        }
+        /* 平滑捲動 */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-ael-navy text-white font-sans antialiased selection:bg-ael-blue selection:text-white">
+
+    <nav class="fixed w-full z-50 bg-ael-navy/90 backdrop-blur-md border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex-shrink-0 flex items-center gap-2">
+                    <span class="text-2xl font-bold tracking-tighter">AEL</span>
+                    <div class="w-2 h-2 bg-ael-blue rounded-sm"></div> </div>
+                
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#about" class="hover:text-ael-blue transition-colors px-3 py-2 rounded-md text-sm font-medium">關於我們</a>
+                        <a href="#services" class="hover:text-ael-blue transition-colors px-3 py-2 rounded-md text-sm font-medium">解決方案</a>
+                        <a href="#contact" class="bg-ael-blue hover:bg-blue-600 px-4 py-2 rounded text-sm font-medium transition-all">聯絡我們</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="relative min-h-screen flex items-center justify-center pt-20 bg-grid">
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-ael-blue/20 rounded-full blur-[100px] pointer-events-none"></div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-ael-blue font-semibold tracking-wide uppercase text-sm mb-4">Enterprise Blockchain Architects</h2>
+            <h1 class="text-5xl md:text-7xl font-bold tracking-tight mb-6 leading-tight">
+                Secure the Future.<br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-white to-ael-grey">Link the Value.</span>
+            </h1>
+            <p class="mt-4 max-w-2xl mx-auto text-xl text-ael-grey font-light">
+                為銀行與交易所打造的企業級區塊鏈解決方案。<br>
+                從底層架構到市場策略，我們是您連結 Web3 世界的橋樑。
+            </p>
+            <div class="mt-10 flex justify-center gap-4">
+                <a href="#contact" class="px-8 py-3 bg-ael-blue hover:bg-blue-600 rounded text-white font-semibold transition-all shadow-lg shadow-blue-500/30">
+                    預約諮詢
+                </a>
+                <a href="#services" class="px-8 py-3 border border-white/20 hover:bg-white/10 rounded text-white font-semibold transition-all">
+                    了解服務
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-24 bg-ael-dark border-y border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
+                <div
