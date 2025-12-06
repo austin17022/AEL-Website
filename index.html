@@ -29,10 +29,6 @@
                     },
                     animation: {
                         'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-                    },
-                    boxShadow: {
-                        'metallic': 'inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.1)',
-                        'metallic-hover': 'inset 0 1px 0 rgba(255, 255, 255, 0.3), 0 4px 6px -1px rgba(59, 130, 246, 0.3)',
                     }
                 }
             }
@@ -54,20 +50,6 @@
         html {
             scroll-behavior: smooth;
         }
-        /* 金屬按鈕通用樣式 */
-        .btn-metallic {
-            @apply bg-gradient-to-br from-blue-400 to-blue-600 border border-blue-300/30 shadow-metallic text-white font-semibold transition-all duration-300 relative overflow-hidden;
-        }
-        .btn-metallic:hover {
-            @apply from-blue-300 to-blue-500 shadow-metallic-hover -translate-y-0.5;
-        }
-        /* 金屬外框按鈕通用樣式 */
-        .btn-outline-metallic {
-            @apply bg-gradient-to-br from-white/5 to-white/10 border border-white/30 shadow-metallic text-white font-semibold transition-all duration-300 backdrop-blur-sm;
-        }
-        .btn-outline-metallic:hover {
-            @apply bg-white/10 border-white/50 shadow-metallic-hover -translate-y-0.5 text-ael-blue;
-        }
     </style>
 </head>
 <body class="bg-ael-navy text-white font-sans antialiased selection:bg-ael-blue selection:text-white">
@@ -83,7 +65,10 @@
                     <div class="ml-10 flex items-baseline space-x-8">
                         <a href="#about" class="hover:text-ael-blue transition-colors px-3 py-2 rounded-md text-sm font-medium">關於我們</a>
                         <a href="#services" class="hover:text-ael-blue transition-colors px-3 py-2 rounded-md text-sm font-medium">解決方案</a>
-                        <a href="#contact" class="btn-metallic px-6 py-2 rounded text-sm">聯絡我們</a>
+                        
+                        <a href="#contact" class="px-6 py-2 rounded text-sm font-semibold text-white bg-gradient-to-br from-blue-500 to-blue-700 border border-blue-400/30 shadow-[inset_0_1px_0_rgba(255,255,255,0.2)] hover:shadow-[0_4px_6px_-1px_rgba(59,130,246,0.5)] hover:-translate-y-0.5 transition-all duration-300">
+                            聯絡我們
+                        </a>
                     </div>
                 </div>
             </div>
@@ -104,10 +89,12 @@
                 從底層架構到市場策略，我們是您連結 Web3 世界的橋樑。
             </p>
             <div class="mt-10 flex justify-center gap-4">
-                <a href="#contact" class="btn-metallic px-8 py-3 rounded shadow-lg shadow-blue-500/20">
+                
+                <a href="#contact" class="px-8 py-3 rounded text-white font-semibold bg-gradient-to-br from-blue-500 to-blue-700 border border-blue-400/30 shadow-[inset_0_1px_0_rgba(255,255,255,0.2)] hover:shadow-[0_4px_15px_rgba(59,130,246,0.6)] hover:-translate-y-1 hover:from-blue-400 hover:to-blue-600 transition-all duration-300">
                     預約諮詢
                 </a>
-                <a href="#services" class="btn-outline-metallic px-8 py-3 rounded">
+
+                <a href="#services" class="px-8 py-3 rounded text-white font-semibold bg-white/5 border border-white/20 backdrop-blur-sm shadow-[inset_0_1px_0_rgba(255,255,255,0.1)] hover:bg-white/10 hover:border-white/40 hover:-translate-y-1 hover:text-ael-blue transition-all duration-300">
                     了解服務
                 </a>
             </div>
@@ -260,7 +247,7 @@
                                 <label class="block text-sm font-medium text-gray-300 mb-1">需求描述 / Message</label>
                                 <textarea name="message" rows="4" class="w-full bg-black/30 border border-white/10 rounded px-4 py-2 text-white focus:border-ael-blue focus:outline-none focus:ring-1 focus:ring-ael-blue transition-colors"></textarea>
                             </div>
-                            <button type="submit" class="btn-metallic w-full py-3 px-4 rounded shadow-lg">
+                            <button type="submit" class="w-full py-3 px-4 rounded text-white font-semibold bg-gradient-to-br from-blue-500 to-blue-700 border border-blue-400/30 shadow-[inset_0_1px_0_rgba(255,255,255,0.2)] hover:shadow-[0_4px_6px_-1px_rgba(59,130,246,0.5)] hover:-translate-y-0.5 transition-all duration-300">
                                 發送諮詢
                             </button>
                         </div>
