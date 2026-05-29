@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>沃 WÒ ｜ 精品咖啡</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/gh/justfont/open-huninn-font@1.1/font/jf-openhuninn-1.1.css" rel="stylesheet">
+<style>
+  :root{--ink:#181410;--cream:#FFF4E2;--orange:#FF5A1F;--orange-d:#E0440E;--green:#1F5C3D;--yellow:#FFC94D}
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:'jf-openhuninn-1.1','Noto Sans TC',sans-serif;background:var(--cream);color:var(--ink);font-weight:400;line-height:1.7;-webkit-font-smoothing:antialiased}
+  .round{font-family:'jf-openhuninn-1.1','Noto Sans TC',sans-serif}
+  .disp{font-family:'Anton',sans-serif;font-weight:400;letter-spacing:.01em;text-transform:uppercase}
+  .wrap{max-width:1200px;margin:0 auto;padding:0 26px}
+  a{color:inherit;text-decoration:none}
+  img{display:block;width:100%;height:100%;object-fit:cover}
+
+  /* marquee top bar */
+  .marquee{background:var(--ink);color:var(--cream);overflow:hidden;white-space:nowrap;font-size:.78rem;letter-spacing:.2em;padding:9px 0}
+  .marquee div{display:inline-block;animation:scroll 18s linear infinite}
+  .marquee span{margin:0 26px}
+  @keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+  nav{position:sticky;top:0;z-index:50;background:var(--cream);border-bottom:3px solid var(--ink)}
+  .nav-in{display:flex;justify-content:space-between;align-items:center;height:72px}
+  .brand{font-family:'Anton';font-size:1.7rem;letter-spacing:.06em}
+  .brand b{color:var(--orange)}
+  .nav-links{display:flex;gap:30px;align-items:center;font-weight:700;font-size:.92rem}
+  .cart{background:var(--ink);color:var(--cream);padding:10px 18px;border-radius:999px;font-size:.84rem}
+  @media(max-width:760px){.nav-links a:not(.cart){display:none}}
+
+  /* HERO split bold */
+  .hero{border-bottom:3px solid var(--ink)}
+  .hero-in{display:grid;grid-template-columns:1.1fr 1fr}
+  @media(max-width:840px){.hero-in{grid-template-columns:1fr}}
+  .hero-txt{padding:80px 56px;display:flex;flex-direction:column;justify-content:center;background:var(--orange);color:var(--cream)}
+  @media(max-width:840px){.hero-txt{padding:56px 26px}}
+  .hero-txt .kick{font-weight:900;font-size:.82rem;letter-spacing:.24em;margin-bottom:20px}
+  .hero-txt h1{font-family:'jf-openhuninn-1.1','Noto Sans TC',sans-serif;font-size:clamp(3rem,6.5vw,5.4rem);line-height:1.06;letter-spacing:.01em}
+  .hero-txt h1 em{font-style:normal;-webkit-text-stroke:2px var(--cream);color:transparent}
+  .hero-txt p{margin:26px 0 32px;max-width:420px;font-size:1.06rem;color:rgba(255,244,226,.92)}
+  .hero-btns{display:flex;gap:14px;flex-wrap:wrap}
+  .btn{display:inline-block;font-weight:900;font-size:.92rem;padding:16px 30px;border-radius:999px;border:2.5px solid var(--ink);transition:.2s;letter-spacing:.04em}
+  .btn-dark{background:var(--ink);color:var(--cream)}
+  .btn-dark:hover{background:transparent;color:var(--cream);border-color:var(--cream)}
+  .btn-out{background:transparent;color:var(--cream);border-color:var(--cream)}
+  .btn-out:hover{background:var(--cream);color:var(--ink);border-color:var(--cream)}
+  .hero-img{position:relative;min-height:520px;background:#2a1d12 url('https://loremflickr.com/1100/1200/espresso,latteart?lock=38') center/cover}
+  .hero-img .sticker{position:absolute;bottom:30px;left:-46px;width:128px;height:128px;background:var(--yellow);border:3px solid var(--ink);border-radius:50%;display:grid;place-items:center;text-align:center;font-family:'Anton';font-size:.92rem;line-height:1.05;transform:rotate(-12deg)}
+  @media(max-width:840px){.hero-img .sticker{left:auto;right:24px}}
+
+  /* feature strip */
+  .strip{background:var(--green);color:var(--cream);border-bottom:3px solid var(--ink)}
+  .strip-in{display:grid;grid-template-columns:repeat(3,1fr)}
+  @media(max-width:760px){.strip-in{grid-template-columns:1fr}}
+  .strip .it{padding:34px 30px;border-right:1px solid rgba(255,244,226,.2)}
+  .strip .it:last-child{border:none}
+  .strip .it b{font-family:'jf-openhuninn-1.1','Noto Sans TC',sans-serif;font-weight:700;font-size:1.25rem;display:block;letter-spacing:.02em}
+  .strip .it span{font-size:.92rem;color:rgba(255,244,226,.82)}
+
+  /* SHOP */
+  section{padding:90px 0}
+  .head-row{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:40px;flex-wrap:wrap;gap:14px}
+  .head-row h2{font-family:'jf-openhuninn-1.1','Noto Sans TC',sans-serif;font-size:clamp(2.2rem,4.6vw,3.4rem);line-height:1.1}
+  .head-row p{font-weight:700;color:var(--orange-d)}
+  .prod-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  @media(max-width:860px){.prod-grid{grid-template-columns:1fr 1fr}}
+  @media(max-width:540px){.prod-grid{grid-template-columns:1fr}}
+  .prod{background:#fff;border:3px solid var(--ink);border-radius:18px;overflow:hidden;transition:.2s}
+  .prod:hover{transform:translate(-4px,-4px);box-shadow:8px 8px 0 var(--ink)}
+  .prod .ph{aspect-ratio:1/1;position:relative;border-bottom:3px solid var(--ink)}
+  .prod .badge{position:absolute;top:14px;left:14px;background:var(--yellow);border:2px solid var(--ink);font-weight:900;font-size:.74rem;padding:5px 12px;border-radius:999px}
+  .prod .body{padding:22px}
+  .prod .roast{font-weight:900;font-size:.72rem;letter-spacing:.16em;color:var(--orange-d);text-transform:uppercase}
+  .prod h3{font-size:1.4rem;font-weight:900;margin:6px 0 4px}
+  .prod .note{color:#7a6f63;font-size:.92rem;min-height:44px}
+  .prod .buy{display:flex;justify-content:space-between;align-items:center;margin-top:14px}
+  .prod .pp{font-family:'Anton';font-size:1.7rem}
+  .prod .add{background:var(--ink);color:var(--cream);font-weight:900;font-size:.8rem;padding:10px 18px;border-radius:999px}
+
+  /* big quote band */
+  .band{background:var(--ink);color:var(--cream);text-align:center;border-top:3px solid var(--ink)}
+  .band h2{font-family:'jf-openhuninn-1.1','Noto Sans TC',sans-serif;font-size:clamp(2rem,5.2vw,3.8rem);line-height:1.2;letter-spacing:.01em}
+  .band h2 em{font-style:normal;color:var(--orange)}
+  .band p{margin-top:20px;color:rgba(255,244,226,.7);max-width:520px;margin-left:auto;margin-right:auto}
+
+  /* story split image */
+  .story{background:#fff;border-top:3px solid var(--ink);border-bottom:3px solid var(--ink)}
+  .story-in{display:grid;grid-template-columns:1fr 1fr}
+  @media(max-width:840px){.story-in{grid-template-columns:1fr}}
+  .story .ph{min-height:440px;background:#2a1d12 url('https://loremflickr.com/1100/1000/coffeebeans?lock=32') center/cover}
+  .story .tx{padding:80px 56px;display:flex;flex-direction:column;justify-content:center}
+  @media(max-width:840px){.story .tx{padding:54px 26px}}
+  .story .tx h2{font-family:'jf-openhuninn-1.1','Noto Sans TC',sans-serif;font-size:clamp(2rem,3.8vw,3rem);line-height:1.25;margin-bottom:20px}
+  .story .tx p{color:#5a5046;max-width:460px}
+
+  footer{background:var(--orange);color:var(--cream);padding:60px 0 40px;border-top:3px solid var(--ink)}
+  .foot-top{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:24px;padding-bottom:30px;border-bottom:1px solid rgba(255,244,226,.4)}
+  footer .big{font-family:'Anton';font-size:clamp(2.6rem,7vw,5rem);line-height:1}
+  .foot-bot{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;padding-top:24px;font-size:.86rem;color:rgba(255,244,226,.85)}
+  .made{font-weight:900;letter-spacing:.14em}
+</style>
+</head>
+<body>
+
+<div class="marquee"><div><span>● 新鮮現烘 下單才烘</span><span>● 滿 $1,000 全台免運</span><span>● 信用卡 / LINE Pay / 超商付款</span><span>● 隔日出貨</span><span>● 新鮮現烘 下單才烘</span><span>● 滿 $1,000 全台免運</span><span>● 信用卡 / LINE Pay / 超商付款</span><span>● 隔日出貨</span></div></div>
+
+<nav>
+  <div class="wrap nav-in">
+    <div class="brand">沃 <b>WÒ</b></div>
+    <div class="nav-links"><a href="#shop">選購</a><a href="#story">關於</a><a href="#shop" class="cart">🛒 購物車 (0)</a></div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-in">
+    <div class="hero-txt">
+      <span class="kick">SPECIALTY COFFEE · ROASTED IN TAIPEI</span>
+      <h1>新鮮現烘<br><em>不將就</em></h1>
+      <p>我們直接向產地小農採購、自家烘焙。下單才烘，14 天內送到你手上。</p>
+      <div class="hero-btns"><a href="#shop" class="btn btn-dark">立即選購 →</a><a href="#story" class="btn btn-out">品牌故事</a></div>
+    </div>
+    <div class="hero-img"><div class="sticker">下單<br>才烘</div></div>
+  </div>
+</header>
+
+<div class="strip">
+  <div class="wrap strip-in">
+    <div class="it"><b>產地直送</b><span>與小農直接採購，源頭把關</span></div>
+    <div class="it"><b>14 天內出貨</b><span>下單才烘，新鮮看得見</span></div>
+    <div class="it"><b>滿額免運</b><span>單筆滿 $1,000 全台免運</span></div>
+  </div>
+</div>
+
+<section id="shop">
+  <div class="wrap">
+    <div class="head-row"><h2>本月選豆</h2><p>↓ 選一支今天的心情</p></div>
+    <div class="prod-grid">
+      <div class="prod"><div class="ph"><span class="badge">熱賣 No.1</span><img src="https://loremflickr.com/700/700/coffeebeans?lock=32" alt=""></div><div class="body"><span class="roast">Light Roast</span><h3>耶加雪菲 G1</h3><p class="note">花香、檸檬、紅茶尾韻</p><div class="buy"><span class="pp">$520</span><a href="#" class="add">加入購物車</a></div></div></div>
+      <div class="prod"><div class="ph"><span class="badge">平衡耐喝</span><img src="https://loremflickr.com/700/700/espresso?lock=33" alt=""></div><div class="body"><span class="roast">Medium Roast</span><h3>哥倫比亞 蜜處理</h3><p class="note">焦糖、堅果、圓潤平衡</p><div class="buy"><span class="pp">$480</span><a href="#" class="add">加入購物車</a></div></div></div>
+      <div class="prod"><div class="ph"><span class="badge">濃郁系</span><img src="https://loremflickr.com/700/700/coffeecup?lock=34" alt=""></div><div class="body"><span class="roast">Dark Roast</span><h3>曼特寧 深焙</h3><p class="note">黑巧克力、菸草、醇厚</p><div class="buy"><span class="pp">$450</span><a href="#" class="add">加入購物車</a></div></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <h2>一杯好咖啡，<br>從<em>產地</em>到<em>手心</em></h2>
+    <p>每一包都標記產區、處理法與最佳賞味期。喝得到的透明，才是真的講究。</p>
+  </div>
+</section>
+
+<section class="story" id="story" style="padding:0">
+  <div class="story-in">
+    <div class="ph"></div>
+    <div class="tx">
+      <h2>烘豆，是一場<br>與時間的對話</h2>
+      <p>沃咖啡的每一支豆子都經過杯測師反覆試烘，找出風味的甜蜜點。我們只賣烘焙後 14 天內的新鮮豆，讓你在家也能喝到咖啡館的層次。</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="big">沃 WÒ<br>COFFEE</div>
+      <a href="#shop" class="btn btn-dark">立即選購 →</a>
+    </div>
+    <div class="foot-bot">
+      <span>© 2026 WÒ SPECIALTY COFFEE · 台北 TAIPEI · LINE @wocoffee</span>
+      <span class="made">DEMO · BY AEL — aeltech.network</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
