@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>客戶資料還在用 Excel？5 個沒做好，名單遲早變一團廢資料 ｜ 奧科希 AEL</title>
+<meta name="description" content="店家的會員、訂單、客戶資料怎麼整理才安全又好用？用 Excel、LINE、紙本散著存遲早出事。這篇講 5 個資料管理基本功，從集中化、標準化到備份與分眾。">
+<meta name="keywords" content="客戶資料管理,會員資料,訂單管理,店家CRM,客戶名單,資料備份,會員系統">
+<meta name="author" content="奧科希股份有限公司 AEL">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#0F766E">
+<link rel="canonical" href="https://aeltech.network/blog/customer-data-not-excel.html">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230F766E'/%3E%3Ctext x='28' y='46' font-family='sans-serif' font-weight='bold' font-size='40' text-anchor='middle' fill='white'%3EA%3C/text%3E%3Ccircle cx='48' cy='18' r='7' fill='%23FF6B4A'/%3E%3C/svg%3E">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:site_name" content="奧科希 AEL">
+<meta property="og:title" content="客戶資料還在用 Excel？5 個沒做好，名單遲早變一團廢資料">
+<meta property="og:description" content="店家會員、訂單、客戶資料管理的 5 個基本功，從集中化到分眾再行銷。">
+<meta property="og:url" content="https://aeltech.network/blog/customer-data-not-excel.html">
+<meta property="og:image" content="https://aeltech.network/og-image.svg">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "客戶資料還在用 Excel？5 個沒做好，名單遲早變一團廢資料",
+  "description": "店家會員、訂單、客戶資料管理的 5 個基本功。",
+  "image": "https://aeltech.network/og-image.svg",
+  "datePublished": "2026-05-30",
+  "dateModified": "2026-05-30",
+  "author": { "@type": "Organization", "name": "奧科希股份有限公司 AEL" },
+  "publisher": { "@type": "Organization", "name": "奧科希股份有限公司 AEL", "logo": { "@type": "ImageObject", "url": "https://aeltech.network/og-image.svg" } },
+  "mainEntityOfPage": "https://aeltech.network/blog/customer-data-not-excel.html"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "首頁", "item": "https://aeltech.network/" },
+    { "@type": "ListItem", "position": 2, "name": "部落格", "item": "https://aeltech.network/blog/" },
+    { "@type": "ListItem", "position": 3, "name": "客戶資料別再存 Excel" }
+  ]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Noto+Sans+TC:wght@500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{--text:#242424;--soft:#6B6B6B;--line:#E6E6E6;--teal:#0F766E;--teal-d:#0B5650}
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:'Noto Serif TC',Georgia,'Times New Roman',serif;color:var(--text);background:#fff;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+  a{color:var(--teal-d);text-decoration:underline;text-underline-offset:2px;text-decoration-color:rgba(15,118,110,.35)}
+  nav{border-bottom:1px solid var(--line)}
+  .nav-in{max-width:1080px;margin:0 auto;padding:0 24px;height:64px;display:flex;align-items:center;justify-content:space-between;font-family:'Noto Sans TC',sans-serif}
+  .logo{font-weight:900;font-size:1.25rem;color:var(--teal);text-decoration:none}
+  .logo span{color:#FF6B4A}
+  .nav-cta{background:var(--teal);color:#fff;font-weight:700;padding:8px 16px;border-radius:8px;font-size:.88rem;text-decoration:none}
+  .container{max-width:680px;margin:0 auto;padding:0 24px}
+  .crumb{font-family:'Noto Sans TC',sans-serif;font-size:.84rem;color:var(--soft);padding-top:40px}
+  .crumb a{color:var(--soft);text-decoration:none}
+  h1{font-family:'Noto Sans TC',sans-serif;font-size:2.5rem;font-weight:900;line-height:1.32;letter-spacing:-.02em;margin:20px 0 18px;color:#1a1a1a}
+  .byline{font-family:'Noto Sans TC',sans-serif;color:var(--soft);font-size:.95rem;margin-bottom:34px;padding-bottom:34px;border-bottom:1px solid var(--line)}
+  article{font-size:1.3rem;line-height:1.9}
+  article p{margin:0 0 30px}
+  .lead{font-size:1.42rem;line-height:1.7;color:#333}
+  article strong{font-weight:700;color:#111}
+  h2{font-family:'Noto Sans TC',sans-serif;font-size:1.7rem;font-weight:800;line-height:1.4;letter-spacing:-.01em;margin:54px 0 18px;color:#1a1a1a}
+  h2 .n{color:var(--teal);margin-right:10px}
+  article ol{margin:0 0 30px;padding-left:1.4em}
+  article li{margin-bottom:14px}
+  blockquote{margin:40px 0;padding:6px 0 6px 28px;border-left:3px solid #1a1a1a;font-size:1.46rem;line-height:1.6;color:#1a1a1a;font-weight:600}
+  .end-rule{width:40px;height:4px;background:#e0e0e0;border-radius:2px;margin:60px auto}
+  .cta{font-family:'Noto Sans TC',sans-serif;border:1px solid var(--line);border-radius:16px;padding:34px 30px;text-align:center;margin:14px 0 30px}
+  .cta h3{font-size:1.35rem;font-weight:900;margin-bottom:10px;color:#1a1a1a}
+  .cta p{font-size:1rem;line-height:1.7;color:var(--soft);margin-bottom:22px}
+  .cta a{display:inline-block;background:var(--teal);color:#fff;font-weight:700;padding:14px 30px;border-radius:10px;text-decoration:none}
+  .back{display:inline-block;font-family:'Noto Sans TC',sans-serif;margin:6px 0 70px;color:var(--soft);font-size:.95rem;text-decoration:none}
+  footer{border-top:1px solid var(--line);padding:40px 0;font-family:'Noto Sans TC',sans-serif;font-size:.86rem;color:var(--soft);text-align:center}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-in">
+    <a href="/" class="logo">奧科希 <span>AEL.</span></a>
+    <a href="https://line.me/ti/p/~austin2866" target="_blank" rel="noopener" class="nav-cta">預約免費諮詢</a>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="crumb"><a href="/">首頁</a> / <a href="/blog/">部落格</a> / 客戶資料別再存 Excel</div>
+  <h1>客戶資料還在用 Excel？5 個沒做好，名單遲早變一團廢資料</h1>
+  <div class="byline">奧科希 AEL ・ 2026 年 5 月 30 日 ・ 閱讀約 6 分鐘</div>
+
+  <article>
+    <p class="lead">會員資料記在 LINE、訂單抄在紙本、名單存在一個叫「客戶最新版_final2.xlsx」的檔案——這是大多數店家的真實狀況。問題是：等你想拿這些資料來做點什麼（發優惠、找回頭客）時，才發現它們根本用不了。</p>
+
+    <p>客戶名單是店家最值錢的資產，但「有存」不等於「能用」。以下 5 個基本功，決定你的名單是金礦還是一堆廢資料。</p>
+
+    <h2><span class="n">1.</span>集中在一個地方，別到處散落</h2>
+    <p>同一個客人，電話在 LINE、消費紀錄在紙本、生日在某張便條紙——這叫「資料孤島」。要用的時候你根本拼不起來。</p>
+    <p><strong>所有客戶資料應該有一個「唯一的家」</strong>（一套會員/訂單系統），每次互動都記回同一個地方。這樣每個客人才會有一份完整、即時的輪廓。</p>
+
+    <h2><span class="n">2.</span>欄位要標準化</h2>
+    <p>有人填「0912-345-678」、有人填「0912345678」、有人寫「九一二…」；姓名一下全名一下綽號。格式一亂，<strong>就無法搜尋、無法群發、無法比對重複。</strong></p>
+    <p>先把必要欄位定清楚（手機、姓名、來源、首購日），並規定格式。系統能在輸入當下就驗證格式，比事後人工清理省太多。</p>
+
+    <h2><span class="n">3.</span>權限控管：誰能看、誰能匯出</h2>
+    <p>整份客戶名單放在一個共用 Excel、人人能下載——這是最危險的做法。<strong>員工離職時順手帶走整份名單，你完全擋不住，也查不到。</strong></p>
+    <p>正確做法是分權限：誰能看、誰能改、誰能匯出，並留下操作紀錄。名單是公司資產，不該人人能整包搬走。</p>
+
+    <h2><span class="n">4.</span>一定要有自動備份</h2>
+    <p>Excel 會壞檔、電腦會中毒、隨身碟會不見。<strong>哪天檔案打不開，你幾年累積的客戶就一夕歸零。</strong></p>
+    <p>資料要放在會自動、定期、異地備份的系統裡——不是某台店裡電腦的桌面。這件事平常無感，出事時價值連城。</p>
+
+    <h2><span class="n">5.</span>資料要「能用」：分眾與標籤</h2>
+    <p>一份只有名字電話的名單，價值很低。真正能帶來營收的，是<strong>能回答「誰最近 3 個月沒來了」「誰是消費前 20% 的常客」</strong>的資料。</p>
+    <p>幫客人打標籤（首購、回頭、生日月、偏好品項），你才能精準再行銷：對沉睡客發喚回優惠、對熟客發新品搶先。同一份名單，會用的人能多榨出好幾倍價值。</p>
+
+    <blockquote>客戶名單不是「存起來」就好，而是要「集中、乾淨、安全、能分眾」。少了任何一項，它就只是一份打不開、也用不動的死資料。</blockquote>
+
+    <h2>這些，其實一套會員系統就解決了</h2>
+    <p>上面 5 件事聽起來很多，但只要你的網站本身就帶會員與訂單系統，它們大多是「設定好就自動運作」的。客人線上下單、訂位，資料自動進系統、自動備份、自動打標籤——你不用再維護那個會越來越亂的 Excel。</p>
+    <p>我們（<a href="/">奧科希 AEL</a>）幫店家做網站時，會員與訂單管理就是標配，資料的集中、備份、權限我們都幫你顧好。</p>
+
+    <div class="cta">
+      <h3>讓客戶資料自己長在系統裡</h3>
+      <p>免費幫您的店做專業網站，含會員與訂單管理。0 元建置、只收維護月費。</p>
+      <a href="https://line.me/ti/p/~austin2866" target="_blank" rel="noopener">用 LINE 預約免費諮詢 →</a>
+    </div>
+
+    <div class="end-rule"></div>
+    <a href="/blog/" class="back">← 回部落格看更多文章</a>
+  </article>
+</div>
+
+<footer>
+  奧科希股份有限公司 AEL ｜ 免費幫台灣店家做專業網站，只收維護月費<br>
+  © 2026 aeltech.network
+</footer>
+
+</body>
+</html>

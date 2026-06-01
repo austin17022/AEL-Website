@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>網站做完只是開始：90% 店家忽略的 7 個後端維運要點 ｜ 奧科希 AEL</title>
+<meta name="description" content="網站上線不是終點。備份、SSL 憑證、外掛更新、監控、速度、通知、資安——這 7 個後端維運要點沒顧好，輕則客人看到「不安全」，重則被駭、漏單、資料全失。">
+<meta name="keywords" content="網站維運,網站維護,SSL憑證,網站備份,WordPress 安全,網站監控,網站速度">
+<meta name="author" content="奧科希股份有限公司 AEL">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#0F766E">
+<link rel="canonical" href="https://aeltech.network/blog/website-maintenance-7-points.html">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230F766E'/%3E%3Ctext x='28' y='46' font-family='sans-serif' font-weight='bold' font-size='40' text-anchor='middle' fill='white'%3EA%3C/text%3E%3Ccircle cx='48' cy='18' r='7' fill='%23FF6B4A'/%3E%3C/svg%3E">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:site_name" content="奧科希 AEL">
+<meta property="og:title" content="網站做完只是開始：90% 店家忽略的 7 個後端維運要點">
+<meta property="og:description" content="備份、SSL、更新、監控、速度、通知、資安——上線後真正要顧的 7 件事。">
+<meta property="og:url" content="https://aeltech.network/blog/website-maintenance-7-points.html">
+<meta property="og:image" content="https://aeltech.network/og-image.svg">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "網站做完只是開始：90% 店家忽略的 7 個後端維運要點",
+  "description": "網站上線後真正要顧的 7 個後端維運要點。",
+  "image": "https://aeltech.network/og-image.svg",
+  "datePublished": "2026-05-30",
+  "dateModified": "2026-05-30",
+  "author": { "@type": "Organization", "name": "奧科希股份有限公司 AEL" },
+  "publisher": { "@type": "Organization", "name": "奧科希股份有限公司 AEL", "logo": { "@type": "ImageObject", "url": "https://aeltech.network/og-image.svg" } },
+  "mainEntityOfPage": "https://aeltech.network/blog/website-maintenance-7-points.html"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "首頁", "item": "https://aeltech.network/" },
+    { "@type": "ListItem", "position": 2, "name": "部落格", "item": "https://aeltech.network/blog/" },
+    { "@type": "ListItem", "position": 3, "name": "7 個後端維運要點" }
+  ]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Noto+Sans+TC:wght@500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{--text:#242424;--soft:#6B6B6B;--line:#E6E6E6;--teal:#0F766E;--teal-d:#0B5650}
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:'Noto Serif TC',Georgia,'Times New Roman',serif;color:var(--text);background:#fff;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+  a{color:var(--teal-d);text-decoration:underline;text-underline-offset:2px;text-decoration-color:rgba(15,118,110,.35)}
+  nav{border-bottom:1px solid var(--line)}
+  .nav-in{max-width:1080px;margin:0 auto;padding:0 24px;height:64px;display:flex;align-items:center;justify-content:space-between;font-family:'Noto Sans TC',sans-serif}
+  .logo{font-weight:900;font-size:1.25rem;color:var(--teal);text-decoration:none}
+  .logo span{color:#FF6B4A}
+  .nav-cta{background:var(--teal);color:#fff;font-weight:700;padding:8px 16px;border-radius:8px;font-size:.88rem;text-decoration:none}
+  .container{max-width:680px;margin:0 auto;padding:0 24px}
+  .crumb{font-family:'Noto Sans TC',sans-serif;font-size:.84rem;color:var(--soft);padding-top:40px}
+  .crumb a{color:var(--soft);text-decoration:none}
+  h1{font-family:'Noto Sans TC',sans-serif;font-size:2.5rem;font-weight:900;line-height:1.32;letter-spacing:-.02em;margin:20px 0 18px;color:#1a1a1a}
+  .byline{font-family:'Noto Sans TC',sans-serif;color:var(--soft);font-size:.95rem;margin-bottom:34px;padding-bottom:34px;border-bottom:1px solid var(--line)}
+  article{font-size:1.3rem;line-height:1.9}
+  article p{margin:0 0 30px}
+  .lead{font-size:1.42rem;line-height:1.7;color:#333}
+  article strong{font-weight:700;color:#111}
+  h2{font-family:'Noto Sans TC',sans-serif;font-size:1.7rem;font-weight:800;line-height:1.4;letter-spacing:-.01em;margin:54px 0 18px;color:#1a1a1a}
+  h2 .n{color:var(--teal);margin-right:10px}
+  article ol{margin:0 0 30px;padding-left:1.4em}
+  article li{margin-bottom:14px}
+  blockquote{margin:40px 0;padding:6px 0 6px 28px;border-left:3px solid #1a1a1a;font-size:1.46rem;line-height:1.6;color:#1a1a1a;font-weight:600}
+  .end-rule{width:40px;height:4px;background:#e0e0e0;border-radius:2px;margin:60px auto}
+  .cta{font-family:'Noto Sans TC',sans-serif;border:1px solid var(--line);border-radius:16px;padding:34px 30px;text-align:center;margin:14px 0 30px}
+  .cta h3{font-size:1.35rem;font-weight:900;margin-bottom:10px;color:#1a1a1a}
+  .cta p{font-size:1rem;line-height:1.7;color:var(--soft);margin-bottom:22px}
+  .cta a{display:inline-block;background:var(--teal);color:#fff;font-weight:700;padding:14px 30px;border-radius:10px;text-decoration:none}
+  .back{display:inline-block;font-family:'Noto Sans TC',sans-serif;margin:6px 0 70px;color:var(--soft);font-size:.95rem;text-decoration:none}
+  footer{border-top:1px solid var(--line);padding:40px 0;font-family:'Noto Sans TC',sans-serif;font-size:.86rem;color:var(--soft);text-align:center}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-in">
+    <a href="/" class="logo">奧科希 <span>AEL.</span></a>
+    <a href="https://line.me/ti/p/~austin2866" target="_blank" rel="noopener" class="nav-cta">預約免費諮詢</a>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="crumb"><a href="/">首頁</a> / <a href="/blog/">部落格</a> / 7 個後端維運要點</div>
+  <h1>網站做完只是開始：90% 店家忽略的 7 個後端維運要點</h1>
+  <div class="byline">奧科希 AEL ・ 2026 年 5 月 30 日 ・ 閱讀約 6 分鐘</div>
+
+  <article>
+    <p class="lead">很多店家以為「網站做好上線就沒事了」。其實網站比較像一台車——買來只是開始，不保養，遲早在路上拋錨。而且它拋錨的時候，往往是客人比你先發現。</p>
+
+    <p>以下 7 個後端維運要點，是網站「活著」的基本功。沒人提醒，是因為做網站的人交件後就跑了；但這些事每天都在默默影響你的生意。</p>
+
+    <h2><span class="n">1.</span>自動備份（而且要異地）</h2>
+    <p>主機壞掉、更新失敗、被駭——任何一個都可能讓網站瞬間歸零。<strong>沒有備份，就等於沒有後悔的機會。</strong></p>
+    <p>備份要自動、定期，而且存在「別的地方」（異地），不能只放同一台主機。出事時，能在幾分鐘內還原，跟整個重做，是天壤之別。</p>
+
+    <h2><span class="n">2.</span>SSL 憑證別讓它過期</h2>
+    <p>SSL 就是網址前面那把「鎖」（https）。憑證會到期，一旦過期，<strong>客人一開你的網站，瀏覽器就跳出大大的「不安全」警告，嚇都嚇跑了。</strong></p>
+    <p>這是最常見、也最冤的失誤——明明網站好好的，只因為忘了續期就流失客人。必須有人盯著到期日、自動續。</p>
+
+    <h2><span class="n">3.</span>系統與外掛要持續更新</h2>
+    <p>WordPress、外掛、主題都會不斷修補安全漏洞。<strong>放著不更新，等於把門開著——店家網站被駭，9 成是因為用了過期、有漏洞的外掛。</strong></p>
+    <p>但更新也不能亂更，更新前要先備份、更新後要測試，避免「更新完版面全跑掉」。這是需要人定期照顧的事。</p>
+
+    <h2><span class="n">4.</span>監控：網站掛了，你要第一個知道</h2>
+    <p>網站半夜掛掉、結帳壞掉，如果是「客人打來罵你才知道」，那已經損失一票生意了。</p>
+    <p><strong>要有自動監控，網站一出問題就主動通知</strong>，讓你（或維運的人）在客人發現前就先處理。</p>
+
+    <h2><span class="n">5.</span>速度與圖片優化</h2>
+    <p>網站慢三秒，一半的人就關掉了；而且 <strong>Google 也會把慢的網站往後排</strong>。最常見的元兇，是店家直接上傳了手機拍的超大張原圖。</p>
+    <p>圖片要壓縮、要用對格式、要做快取。這些優化平常看不到，但直接影響轉換率和搜尋排名。</p>
+
+    <h2><span class="n">6.</span>確認通知真的有送達</h2>
+    <p>訂單通知、訂位通知、聯絡表單——你以為有在收，結果全進了垃圾信匣，或根本沒設定好。<strong>等於客人來敲門，你卻完全沒聽到。</strong></p>
+    <p>上線後要實際測試每一條通知路線，並定期檢查，確保訂單不會默默漏掉。</p>
+
+    <h2><span class="n">7.</span>基本資安：後台、密碼、垃圾留言</h2>
+    <p>後台登入要防暴力破解、密碼不能用 admin/123456、留言與表單要擋機器人灌垃圾。<strong>這些不做，網站很快就會被當成跳板或被塞滿廣告。</strong></p>
+
+    <blockquote>網站不是一次性的作品，而是一個需要持續餵養的系統。備份、更新、監控、資安——這些「沒做也不會馬上死」的事，往往在你最忙、最不能出事的時候反咬一口。</blockquote>
+
+    <h2>這就是「維護月費」在做的事</h2>
+    <p>很多人不懂，網站做好了為什麼還要付月費？答案就是上面這 7 件事——它們不是一次做完，而是<strong>每天、每月持續在進行的照顧</strong>。</p>
+    <p>我們（<a href="/">奧科希 AEL</a>）的月費就包含這些：備份、更新、監控、資安、速度，全部我們顧。你不用記 SSL 哪天到期、不用半夜爬起來修網站——出事我們先處理。</p>
+
+    <div class="cta">
+      <h3>網站的保養，交給專人顧</h3>
+      <p>免費幫您的店做專業網站，後端維運全包在維護月費裡。您只要顧生意。</p>
+      <a href="https://line.me/ti/p/~austin2866" target="_blank" rel="noopener">用 LINE 預約免費諮詢 →</a>
+    </div>
+
+    <div class="end-rule"></div>
+    <a href="/blog/" class="back">← 回部落格看更多文章</a>
+  </article>
+</div>
+
+<footer>
+  奧科希股份有限公司 AEL ｜ 免費幫台灣店家做專業網站，只收維護月費<br>
+  © 2026 aeltech.network
+</footer>
+
+</body>
+</html>
