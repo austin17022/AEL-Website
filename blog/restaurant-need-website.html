@@ -45,37 +45,39 @@
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Noto+Sans+TC:wght@500;700;900&display=swap" rel="stylesheet">
 <style>
-  :root{--teal:#0F766E;--teal-d:#0B5650;--coral:#FF6B4A;--coral-d:#C2603C;--ink:#3A352F;--ink-strong:#211D17;--slate:#6E665C;--line:#EAEAEA;--bg-soft:#F8FAF8;--bg-mint:#F3F8F4}
+  :root{--text:#242424;--soft:#6B6B6B;--line:#E6E6E6;--teal:#0F766E;--teal-d:#0B5650}
   *{margin:0;padding:0;box-sizing:border-box}
   html{scroll-behavior:smooth}
-  body{font-family:'Noto Sans TC',system-ui,sans-serif;color:var(--ink);background:#fff;line-height:2;font-size:1.08rem;-webkit-font-smoothing:antialiased}
-  a{color:var(--teal-d);text-decoration:underline;text-underline-offset:3px;text-decoration-color:#A9D2CC}
-  .wrap{max-width:720px;margin:0 auto;padding:0 22px}
-  nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.9);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
-  .nav-in{max-width:1140px;margin:0 auto;padding:0 22px;display:flex;align-items:center;justify-content:space-between;height:66px}
-  .logo{font-weight:900;font-size:1.3rem;color:var(--teal)}
-  .logo span{color:var(--coral)}
-  .nav-cta{background:var(--coral);color:#fff;font-weight:700;padding:9px 18px;border-radius:12px;font-size:.9rem}
-  .crumb{font-size:.86rem;color:var(--slate);padding-top:30px}
-  h1{font-size:2.3rem;font-weight:900;line-height:1.4;margin:16px 0 14px;color:var(--ink-strong);letter-spacing:-.01em}
-  .meta{color:var(--slate);font-size:.9rem;margin-bottom:36px;padding-bottom:26px;border-bottom:1px solid var(--line)}
-  article h2{font-size:1.6rem;font-weight:900;color:var(--ink-strong);margin:46px 0 16px}
-  article p{margin:0 0 24px;color:var(--ink)}
-  article ol,article ul{margin:0 0 18px;padding-left:1.2em}
-  article li{margin-bottom:12px}
-  article strong{color:var(--ink-strong);font-weight:700}
-  .lead{font-size:1.18rem;line-height:1.85;color:var(--ink);margin-bottom:28px}
-  .num{display:inline-flex;width:32px;height:32px;background:var(--teal);color:#fff;border-radius:50%;font-weight:900;align-items:center;justify-content:center;margin-right:10px;font-size:.95rem}
-  .callout{background:var(--bg-soft);border-left:4px solid var(--coral);border-radius:0 14px 14px 0;padding:22px 24px;margin:32px 0}
-  .cta-box{background:linear-gradient(135deg,var(--teal-d),var(--teal));color:#fff;border-radius:22px;padding:38px 32px;text-align:center;margin:48px 0 20px}
-  .cta-box h3{font-size:1.5rem;font-weight:900;margin-bottom:10px}
-  .cta-box p{opacity:.92;margin-bottom:22px}
-  .cta-box a{display:inline-block;background:#fff;color:var(--teal);font-weight:700;padding:14px 30px;border-radius:14px}
-  .back{display:inline-block;margin:10px 0 60px;color:var(--slate);font-size:.92rem}
-  footer{background:var(--ink);color:#9FB4B1;padding:40px 0;font-size:.86rem;text-align:center}
-  footer .logo{color:#fff;margin-bottom:8px}
+  body{font-family:'Noto Serif TC',Georgia,'Times New Roman',serif;color:var(--text);background:#fff;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+  a{color:var(--teal-d);text-decoration:underline;text-underline-offset:2px;text-decoration-color:rgba(15,118,110,.35)}
+  nav{border-bottom:1px solid var(--line)}
+  .nav-in{max-width:1080px;margin:0 auto;padding:0 24px;height:64px;display:flex;align-items:center;justify-content:space-between;font-family:'Noto Sans TC',sans-serif}
+  .logo{font-weight:900;font-size:1.25rem;color:var(--teal);text-decoration:none}
+  .logo span{color:#FF6B4A}
+  .nav-cta{background:var(--teal);color:#fff;font-weight:700;padding:8px 16px;border-radius:8px;font-size:.88rem;text-decoration:none}
+  .container{max-width:680px;margin:0 auto;padding:0 24px}
+  .crumb{font-family:'Noto Sans TC',sans-serif;font-size:.84rem;color:var(--soft);padding-top:40px}
+  .crumb a{color:var(--soft);text-decoration:none}
+  h1{font-family:'Noto Sans TC',sans-serif;font-size:2.5rem;font-weight:900;line-height:1.32;letter-spacing:-.02em;margin:20px 0 18px;color:#1a1a1a}
+  .byline{font-family:'Noto Sans TC',sans-serif;color:var(--soft);font-size:.95rem;margin-bottom:34px;padding-bottom:34px;border-bottom:1px solid var(--line)}
+  article{font-size:1.3rem;line-height:1.9}
+  article p{margin:0 0 30px}
+  .lead{font-size:1.42rem;line-height:1.7;color:#333}
+  article strong{font-weight:700;color:#111}
+  h2{font-family:'Noto Sans TC',sans-serif;font-size:1.7rem;font-weight:800;line-height:1.4;letter-spacing:-.01em;margin:54px 0 18px;color:#1a1a1a}
+  h2 .n{color:var(--teal);margin-right:10px}
+  article ol{margin:0 0 30px;padding-left:1.4em}
+  article li{margin-bottom:14px}
+  blockquote{margin:40px 0;padding:6px 0 6px 28px;border-left:3px solid #1a1a1a;font-size:1.46rem;line-height:1.6;color:#1a1a1a;font-weight:600}
+  .end-rule{width:40px;height:4px;background:#e0e0e0;border-radius:2px;margin:60px auto}
+  .cta{font-family:'Noto Sans TC',sans-serif;border:1px solid var(--line);border-radius:16px;padding:34px 30px;text-align:center;margin:14px 0 30px}
+  .cta h3{font-size:1.35rem;font-weight:900;margin-bottom:10px;color:#1a1a1a}
+  .cta p{font-size:1rem;line-height:1.7;color:var(--soft);margin-bottom:22px}
+  .cta a{display:inline-block;background:var(--teal);color:#fff;font-weight:700;padding:14px 30px;border-radius:10px;text-decoration:none}
+  .back{display:inline-block;font-family:'Noto Sans TC',sans-serif;margin:6px 0 70px;color:var(--soft);font-size:.95rem;text-decoration:none}
+  footer{border-top:1px solid var(--line);padding:40px 0;font-family:'Noto Sans TC',sans-serif;font-size:.86rem;color:var(--soft);text-align:center}
 </style>
 </head>
 <body>
@@ -87,62 +89,60 @@
   </div>
 </nav>
 
-<div class="wrap">
+<div class="container">
   <div class="crumb"><a href="/">首頁</a> / <a href="/blog/">部落格</a> / 餐廳要不要做官網？</div>
   <h1>餐廳要不要做官網？沒網站，你正在流失這 5 種客人</h1>
-  <div class="meta">奧科希 AEL ・ 2026-05-30 ・ 閱讀約 4 分鐘</div>
+  <div class="byline">奧科希 AEL ・ 2026 年 5 月 30 日 ・ 閱讀約 4 分鐘</div>
 
   <article>
-    <p class="lead">「我有 FB 粉專、有上 foodpanda，還需要做官網嗎？」這是我們最常被店家老闆問的問題。答案是：<strong>需要，而且你可能正在默默流失客人卻沒發現。</strong></p>
+    <p class="lead">「我有 FB 粉專、有上 foodpanda，還需要做官網嗎？」這是我們最常被店家老闆問的問題。答案是：需要，而且你可能正在默默流失客人卻沒發現。</p>
 
-    <p>現在的客人，習慣「先 Google 再決定」。想找間店吃飯、訂位、看菜單，第一個動作就是搜尋。如果搜不到你的官網，他們不會多等——直接點開有網站的那家。以下這 5 種客人，正在因為你沒官網而流失。</p>
+    <p>現在的客人，習慣「先 Google 再決定」。想找間店吃飯、訂位、看菜單，第一個動作就是搜尋。如果搜不到你的官網，他們不會多等——直接點開有網站的那一家。以下這 5 種客人，正在因為你沒官網而流失。</p>
 
-    <h2><span class="num">1</span>想訂位的客人</h2>
-    <p>客人滑手機看到你的店，想訂今晚的位子，卻只找得到一支電話。他可能正在開會、在捷運上、或已經是晚上打烊時間——<strong>不能馬上線上訂位，這個客人就溜走了。</strong>一個能 24 小時線上訂位的網站，等於幫你多開了一個不打烊的櫃台。</p>
+    <h2><span class="n">1.</span>想訂位的客人</h2>
+    <p>客人滑手機看到你的店，想訂今晚的位子，卻只找得到一支電話。他可能正在開會、在捷運上、或已經是打烊時間——<strong>不能馬上線上訂位，這個客人就溜走了。</strong>一個能 24 小時線上訂位的網站，等於幫你多開了一個不打烊的櫃台。</p>
 
-    <h2><span class="num">2</span>想先看菜單的客人</h2>
+    <h2><span class="n">2.</span>想先看菜單的客人</h2>
     <p>新客人最在意「你賣什麼、多少錢、合不合我口味」。沒有線上菜單，他只能憑空想像，或乾脆換一家看得到菜單的店。<strong>線上菜單（含照片、價格）是降低新客戒心最有效的工具。</strong></p>
 
-    <h2><span class="num">3</span>外縣市、外國來的客人</h2>
+    <h2><span class="n">3.</span>外縣市、外國來的客人</h2>
     <p>觀光客、出差的人、想揪團聚餐的人，行前都會做功課。沒有官網，你就不在他們的口袋名單裡。有官網、有 Google 地圖整合，等於把店開到了每個人的手機上。</p>
 
-    <h2><span class="num">4</span>想回購、想宅配的客人</h2>
+    <h2><span class="n">4.</span>想回購、想宅配的客人</h2>
     <p>很多小吃、甜點、伴手禮其實可以做外帶或宅配，但客人不知道、也沒地方下單。<strong>一個能線上收款、線上下單的網站，讓你的生意不再受限於店面那幾張桌子。</strong></p>
 
-    <h2><span class="num">5</span>會比較「專不專業」的客人</h2>
-    <p>同樣兩家店，一家有質感官網、一家只有零散的 FB 貼文，客人會本能覺得「有官網的比較正規、比較放心」。<strong>官網就是你的數位門面，影響的是第一印象。</strong></p>
+    <h2><span class="n">5.</span>會比較「專不專業」的客人</h2>
+    <p>同樣兩家店，一家有質感官網、一家只有零散的 FB 貼文，客人會本能覺得「有官網的比較正規、比較放心」。<strong>官網就是你的數位門面，決定的是第一印象。</strong></p>
 
-    <div class="callout">
-      <p style="margin:0"><strong>「那我有 FB / IG 不就好了？」</strong><br>社群很適合「經營熟客、發日常」，但它不適合「被陌生客搜尋到」——FB 貼文不會出現在 Google 搜尋前排，訂位、菜單、金流也都綁在平台規則裡。社群是補充，官網才是地基。</p>
-    </div>
+    <blockquote>「那我有 FB／IG 不就好了？」社群很適合經營熟客、發日常，但它不適合被陌生客搜尋到——貼文不會出現在 Google 前排，訂位、菜單、金流也都綁在平台規則裡。社群是補充，官網才是地基。</blockquote>
 
-    <h2>那一個好的餐廳官網，該有什麼？</h2>
+    <h2>一個好的餐廳官網，該有什麼？</h2>
     <ol>
       <li><strong>線上訂位</strong>：客人手機一鍵預約，不漏接、不記錯。</li>
       <li><strong>線上菜單／型錄</strong>：圖文價格清楚，隨時自己更新。</li>
       <li><strong>Google 地圖與營業資訊</strong>：被「附近的店」搜尋到。</li>
       <li><strong>線上金流</strong>：外帶、宅配、預購都能直接收款。</li>
-      <li><strong>手機看起來要漂亮</strong>：八成客人用手機開，RWD 是基本。</li>
+      <li><strong>手機看起來要漂亮</strong>：八成客人用手機開，這是基本。</li>
     </ol>
 
-    <h2>「可是架站好麻煩、又好貴…」</h2>
+    <h2>「可是架站好麻煩、又好貴⋯⋯」</h2>
     <p>這正是大多數店家卡關的地方。自己用平台架，要研究一堆設定、串金流、修圖，光摸索就耗掉一整週；找人客製，動輒七萬到十五萬起跳。</p>
-    <p>所以我們（<a href="/">奧科希 AEL</a>）改用另一種方式：<strong>免費幫你做網站，建置 0 元，只收每月維護費</strong>。金流、訂位、商品上下架全幫你弄好，你完全不用碰技術，專心顧好生意就行。</p>
+    <p>所以我們（<a href="/">奧科希 AEL</a>）改用另一種方式：<strong>免費幫你做網站，建置 0 元，只收每月維護費。</strong>金流、訂位、商品上下架全幫你弄好，你完全不用碰技術，專心顧好生意就行。</p>
 
-    <div class="cta-box">
+    <div class="cta">
       <h3>免費幫您的店做一個專業網站</h3>
-      <p>0 元建置・最快 7 天上線・不用懂技術，網路上的事我們全包。</p>
+      <p>0 元建置、最快 7 天上線、不用懂技術，網路上的事我們全包。</p>
       <a href="https://line.me/ti/p/~austin2866" target="_blank" rel="noopener">用 LINE 預約免費諮詢 →</a>
     </div>
 
+    <div class="end-rule"></div>
     <a href="/blog/" class="back">← 回部落格看更多文章</a>
   </article>
 </div>
 
 <footer>
-  <div class="logo">奧科希 <span style="color:#FF6B4A">AEL.</span></div>
-  <div>奧科希股份有限公司 ｜ 免費幫台灣店家做專業網站，只收維護月費</div>
-  <div style="margin-top:8px">© 2026 奧科希股份有限公司 AEL · aeltech.network</div>
+  奧科希股份有限公司 AEL ｜ 免費幫台灣店家做專業網站，只收維護月費<br>
+  © 2026 aeltech.network
 </footer>
 
 </body>
