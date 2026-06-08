@@ -1,435 +1,66 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-Hant">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>免費幫店家做網站・只收維護月費 ｜ 奧科希 AEL</title>
-<meta name="description" content="奧科希 AEL 免費幫台灣餐廳、小吃店、電商打造專業網站，含線上訂位、金流收款、商品上下架，0 元建置、只收維護月費。最快 7 天上線，完全不用懂技術。">
-<meta name="keywords" content="免費做網站,免費架站,餐廳網站製作,小吃店網站,電商網站架設,線上訂位系統,網站設計,網站維護,店家官網,奧科希,AEL">
-<meta name="author" content="奧科希股份有限公司 AEL">
-<meta name="robots" content="index,follow">
-<meta name="theme-color" content="#0F766E">
-<link rel="canonical" href="https://aeltech.network/">
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230F766E'/%3E%3Ctext x='28' y='46' font-family='sans-serif' font-weight='bold' font-size='40' text-anchor='middle' fill='white'%3EA%3C/text%3E%3Ccircle cx='48' cy='18' r='7' fill='%23FF6B4A'/%3E%3C/svg%3E">
-<!-- Open Graph / 社群分享預覽 -->
-<meta property="og:type" content="website">
-<meta property="og:locale" content="zh_TW">
-<meta property="og:site_name" content="奧科希 AEL">
-<meta property="og:title" content="免費幫您的店做專業網站，只收維護月費">
-<meta property="og:description" content="餐廳、小吃店、電商免費架站，含線上訂位、金流、商品上下架。0 元建置、最快 7 天上線，不用懂技術。">
-<meta property="og:url" content="https://aeltech.network/">
-<meta property="og:image" content="https://aeltech.network/og-image.svg">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="免費幫您的店做專業網站，只收維護月費 ｜ 奧科希 AEL">
-<meta name="twitter:description" content="餐廳、小吃店、電商免費架站，含線上訂位、金流、商品上下架。0 元建置、最快 7 天上線。">
-<meta name="twitter:image" content="https://aeltech.network/og-image.svg">
-<!-- 結構化資料：公司 + 服務 + 方案 -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>免費幫店家做網站・只收維護月費 ｜ 奧科希 AEL</title>
+    <meta name="description" content="奧科希 AEL 免費幫台灣餐廳、小吃店、電商打造專業網站，含線上訂位、金流收款、商品上下架，0 元建置、只收維護月費。最快 7 天上線，完全不用懂技術。" />
+    <meta name="keywords" content="免費做網站,免費架站,餐廳網站製作,小吃店網站,電商網站架設,線上訂位系統,網站設計,網站維護,店家官網,奧科希,AEL" />
+    <meta name="author" content="奧科希股份有限公司 AEL" />
+    <meta name="robots" content="index,follow" />
+    <meta name="theme-color" content="#0F766E" />
+    <link rel="canonical" href="https://aeltech.network/" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230F766E'/%3E%3Ctext x='28' y='46' font-family='sans-serif' font-weight='bold' font-size='40' text-anchor='middle' fill='white'%3EA%3C/text%3E%3Ccircle cx='48' cy='18' r='7' fill='%23FF6B4A'/%3E%3C/svg%3E">
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="zh_TW" />
+    <meta property="og:site_name" content="奧科希 AEL" />
+    <meta property="og:title" content="免費幫您的店做專業網站，只收維護月費" />
+    <meta property="og:description" content="餐廳、小吃店、電商免費架站，含線上訂位、金流、商品上下架。0 元建置、最快 7 天上線，不用懂技術。" />
+    <meta property="og:url" content="https://aeltech.network/" />
+    <meta property="og:image" content="https://aeltech.network/og-image.svg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="免費幫您的店做專業網站，只收維護月費 ｜ 奧科希 AEL" />
+    <meta name="twitter:description" content="餐廳、小吃店、電商免費架站，含線上訂位、金流、商品上下架。0 元建置、最快 7 天上線。" />
+    <meta name="twitter:image" content="https://aeltech.network/og-image.svg" />
+    <script type="application/ld+json">
     {
-      "@type": "Organization",
-      "@id": "https://aeltech.network/#org",
-      "name": "奧科希股份有限公司",
-      "alternateName": "AEL",
-      "url": "https://aeltech.network/",
-      "logo": "https://aeltech.network/og-image.svg",
-      "description": "免費幫台灣店家做專業網站，只收維護月費。提供金流收款、線上訂位、商品上下架等完整功能。",
-      "areaServed": "TW",
-      "sameAs": ["https://line.me/ti/p/~austin2866"]
-    },
-    {
-      "@type": "Service",
-      "name": "免費網站建置與維護服務",
-      "serviceType": "網站設計與維護",
-      "provider": { "@id": "https://aeltech.network/#org" },
-      "areaServed": { "@type": "Country", "name": "台灣" },
-      "description": "免費建置店家網站，含金流、線上訂位、商品上下架，採每月維護月費制，0 元建置費。",
-      "offers": [
-        { "@type": "Offer", "name": "基本方案", "price": "5000", "priceCurrency": "TWD", "description": "專業形象官網、線上菜單/型錄、Google 地圖、聯絡表單" },
-        { "@type": "Offer", "name": "進階方案", "price": "12000", "priceCurrency": "TWD", "description": "含線上金流收款、線上訂位系統、商品自助上下架" },
-        { "@type": "Offer", "name": "旗艦方案", "price": "20000", "priceCurrency": "TWD", "description": "全客製化設計、網站代操與更新、數據報表、優先支援" }
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://aeltech.network/#org",
+          "name": "奧科希股份有限公司",
+          "alternateName": "AEL",
+          "url": "https://aeltech.network/",
+          "logo": "https://aeltech.network/og-image.svg",
+          "description": "免費幫台灣店家做專業網站，只收維護月費。提供金流收款、線上訂位、商品上下架等完整功能。",
+          "areaServed": "TW",
+          "sameAs": ["https://line.me/ti/p/~austin2866"]
+        },
+        {
+          "@type": "Service",
+          "name": "免費網站建置與維護服務",
+          "serviceType": "網站設計與維護",
+          "provider": { "@id": "https://aeltech.network/#org" },
+          "areaServed": { "@type": "Country", "name": "台灣" },
+          "description": "免費建置店家網站，含金流、線上訂位、商品上下架，採每月維護月費制，0 元建置費。",
+          "offers": [
+            { "@type": "Offer", "name": "基本方案", "price": "5000", "priceCurrency": "TWD" },
+            { "@type": "Offer", "name": "進階方案", "price": "12000", "priceCurrency": "TWD" },
+            { "@type": "Offer", "name": "旗艦方案", "price": "20000", "priceCurrency": "TWD" }
+          ]
+        }
       ]
     }
-  ]
-}
-</script>
-<!-- 結構化資料：常見問題（可能成為 Google 精選摘要） -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    { "@type": "Question", "name": "網站做好之後是誰的？", "acceptedAnswer": { "@type": "Answer", "text": "網站是為您的店打造的，內容、品牌、網域都屬於您。我們負責設計、建置與後續維護。" } },
-    { "@type": "Question", "name": "客人付款的錢會進誰的帳戶？", "acceptedAnswer": { "@type": "Answer", "text": "直接進您自己的金流帳戶（例如綠界）。我們只幫您把系統串好，完全不經手您的錢，安全又透明。" } },
-    { "@type": "Question", "name": "真的不用先付建置費嗎？", "acceptedAnswer": { "@type": "Answer", "text": "對，建置 0 元。我們只收每月維護費，網站持續更新、出問題隨時找我們，合約期為 12 個月。" } },
-    { "@type": "Question", "name": "多久可以上線？", "acceptedAnswer": { "@type": "Answer", "text": "一般店家最快 7 天，功能較多的約 2～3 週。我們會先做好給您看，滿意再上線。" } },
-    { "@type": "Question", "name": "我完全不懂電腦，可以嗎？", "acceptedAnswer": { "@type": "Answer", "text": "完全沒問題！這正是我們存在的理由——技術的事全交給我們，您只要專心做生意。" } }
-  ]
-}
-</script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
-<style>
-  :root{
-    --teal:#0F766E; --teal-dark:#0B5650; --teal-light:#14B8A6;
-    --coral:#FF6B4A; --coral-dark:#F0512E;
-    --ink:#0F1F1D; --slate:#475569; --line:#E6EDEC;
-    --bg:#FFFFFF; --bg-soft:#F6FAF9; --bg-mint:#ECF7F5;
-    --shadow:0 18px 40px -18px rgba(15,118,110,.28);
-    --shadow-sm:0 8px 24px -12px rgba(15,31,29,.18);
-    --radius:22px;
-  }
-  *{margin:0;padding:0;box-sizing:border-box}
-  html{scroll-behavior:smooth}
-  body{font-family:'Noto Sans TC',system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.7;-webkit-font-smoothing:antialiased}
-  .wrap{max-width:1140px;margin:0 auto;padding:0 22px}
-  section{padding:92px 0}
-  h1,h2,h3{line-height:1.25;letter-spacing:-.01em}
-  .eyebrow{display:inline-block;font-weight:700;font-size:.82rem;letter-spacing:.12em;color:var(--teal);background:var(--bg-mint);padding:7px 15px;border-radius:999px;margin-bottom:18px}
-  .btn{display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:1rem;border:none;cursor:pointer;border-radius:14px;padding:15px 28px;text-decoration:none;transition:.2s}
-  .btn-primary{background:var(--coral);color:#fff;box-shadow:0 12px 26px -10px rgba(255,107,74,.6)}
-  .btn-primary:hover{background:var(--coral-dark);transform:translateY(-2px)}
-  .btn-ghost{background:#fff;color:var(--teal);border:1.5px solid var(--line)}
-  .btn-ghost:hover{border-color:var(--teal);background:var(--bg-mint)}
-  .center{text-align:center}
-  .lead{color:var(--slate);font-size:1.12rem;max-width:640px}
+    </script>
+    <script type="module" crossorigin src="/assets/index-BQahL_A-.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-C9x-7RvU.css">
+  </head>
 
-  /* NAV */
-  nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.82);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
-  .nav-in{display:flex;align-items:center;justify-content:space-between;height:70px}
-  .logo{font-weight:900;font-size:1.4rem;color:var(--teal);letter-spacing:.04em}
-  .logo span{color:var(--coral)}
-  .nav-links{display:flex;gap:30px;align-items:center}
-  .nav-links a{color:var(--slate);text-decoration:none;font-weight:500;font-size:.96rem}
-  .nav-links a:hover{color:var(--teal)}
-  .nav-cta{padding:11px 20px;font-size:.92rem}
-  @media(max-width:820px){.nav-links a:not(.nav-cta){display:none}}
-
-  /* HERO */
-  .hero{background:radial-gradient(1100px 520px at 78% -8%,#D6F2EE 0%,rgba(214,242,238,0) 60%),linear-gradient(180deg,#fff 0%,var(--bg-soft) 100%);padding-top:78px}
-  .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:54px;align-items:center}
-  .hero h1{font-size:3.15rem;font-weight:900}
-  .hero h1 em{font-style:normal;color:var(--teal);position:relative}
-  .hero h1 em:after{content:"";position:absolute;left:0;right:0;bottom:6px;height:14px;background:rgba(255,107,74,.22);z-index:-1;border-radius:4px}
-  .hero p.lead{margin:22px 0 30px}
-  .hero-cta{display:flex;gap:14px;flex-wrap:wrap}
-  .hero-trust{margin-top:26px;display:flex;gap:22px;flex-wrap:wrap;color:var(--slate);font-size:.92rem;font-weight:500}
-  .hero-trust span{display:inline-flex;align-items:center;gap:7px}
-  .chk{width:18px;height:18px;color:var(--teal);flex:none}
-  .hero-trust b{color:var(--teal)}
-  @media(max-width:880px){.hero-grid{grid-template-columns:1fr;gap:40px}.hero h1{font-size:2.4rem}}
-
-  /* device mockup */
-  .mock{position:relative;display:flex;justify-content:center}
-  .laptop{width:100%;max-width:430px;background:#fff;border-radius:18px;box-shadow:var(--shadow);overflow:hidden;border:1px solid var(--line)}
-  .laptop .bar{height:34px;background:#F1F5F4;display:flex;align-items:center;gap:6px;padding:0 14px;border-bottom:1px solid var(--line)}
-  .dot{width:10px;height:10px;border-radius:50%}
-  .d1{background:#FF6259}.d2{background:#FEBC2E}.d3{background:#28C840}
-  .scr{padding:0}
-  .scr-hero{background:linear-gradient(135deg,var(--teal),var(--teal-light));color:#fff;padding:26px 22px}
-  .scr-hero small{opacity:.85;font-size:.7rem;letter-spacing:.1em}
-  .scr-hero h4{font-size:1.25rem;font-weight:900;margin:6px 0 4px}
-  .scr-hero p{font-size:.74rem;opacity:.9}
-  .scr-pill{display:inline-block;margin-top:12px;background:var(--coral);color:#fff;font-size:.7rem;font-weight:700;padding:7px 14px;border-radius:9px}
-  .scr-menu{padding:16px 22px;display:grid;grid-template-columns:1fr 1fr;gap:10px}
-  .menu-card{background:var(--bg-soft);border-radius:11px;padding:10px;font-size:.72rem}
-  .menu-card .img{height:42px;border-radius:7px;background:linear-gradient(135deg,#FFD9A8,#FFB07C);margin-bottom:7px}
-  .menu-card b{display:block}
-  .menu-card span{color:var(--coral);font-weight:700}
-  .phone{position:absolute;right:-6px;bottom:-26px;width:118px;background:#0F1F1D;border-radius:20px;padding:7px;box-shadow:var(--shadow);border:2px solid #233}
-  .phone .pscr{background:#fff;border-radius:14px;overflow:hidden}
-  .phone .ptop{background:linear-gradient(135deg,var(--teal),var(--teal-light));height:54px;color:#fff;padding:9px;font-size:.52rem;font-weight:700}
-  .phone .pbtn{margin:8px;background:var(--coral);color:#fff;font-size:.5rem;text-align:center;padding:6px;border-radius:6px;font-weight:700}
-  .phone .prow{margin:0 8px 7px;height:9px;border-radius:4px;background:#EEF3F2}
-  @media(max-width:880px){.phone{display:none}}
-
-  /* generic grid cards */
-  .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-  @media(max-width:820px){.grid-3{grid-template-columns:1fr}}
-  .card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:30px;box-shadow:var(--shadow-sm);transition:.22s}
-  .card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
-  .card .ic{width:52px;height:52px;border-radius:14px;display:grid;place-items:center;background:var(--bg-mint);margin-bottom:16px;color:var(--teal)}
-  .card .ic svg{width:26px;height:26px}
-  .card h3{font-size:1.18rem;margin-bottom:8px}
-  .card p{color:var(--slate);font-size:.96rem}
-
-  .sec-head{max-width:680px;margin:0 auto 52px}
-  .sec-head h2{font-size:2.2rem;font-weight:900}
-  .sec-head p{color:var(--slate);margin-top:12px;font-size:1.06rem}
-
-  /* pain */
-  .pain{background:var(--bg-soft)}
-  .pain .card{border-left:4px solid var(--coral)}
-  .pain .ic{background:#FFEDE7;color:var(--coral)}
-
-  /* steps */
-  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;counter-reset:s}
-  @media(max-width:820px){.steps{grid-template-columns:1fr}}
-  .step{position:relative;background:var(--bg-mint);border-radius:var(--radius);padding:34px 28px}
-  .step .n{counter-increment:s;width:42px;height:42px;border-radius:50%;background:var(--teal);color:#fff;font-weight:900;display:grid;place-items:center;margin-bottom:14px}
-  .step .n:before{content:counter(s)}
-  .step h3{font-size:1.12rem;margin-bottom:6px}
-  .step p{color:var(--slate);font-size:.95rem}
-
-  /* portfolio */
-  .port{background:linear-gradient(180deg,var(--bg-soft),#fff)}
-  .port-card{display:block;text-decoration:none;color:inherit;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow-sm);background:#fff;transition:.22s}
-  .port-card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
-  .port-card .thumb{height:185px;position:relative;overflow:hidden;background:var(--bg-mint)}
-  .port-card .thumb img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:.5s ease}
-  .port-card:hover .thumb img{transform:scale(1.06)}
-  .t1{background:linear-gradient(135deg,#0F766E,#14B8A6)}
-  .t2{background:linear-gradient(135deg,#F0512E,#FF8A5B)}
-  .t3{background:linear-gradient(135deg,#334155,#64748B)}
-  .port-card .tag{position:absolute;top:14px;left:14px;background:rgba(255,255,255,.92);color:var(--ink);font-size:.72rem;font-weight:700;padding:5px 11px;border-radius:8px}
-  .port-card .body{padding:20px 22px}
-  .port-card .body p{color:var(--slate);font-size:.92rem}
-
-  /* pricing */
-  .price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;align-items:stretch}
-  @media(max-width:820px){.price-grid{grid-template-columns:1fr}}
-  .plan{background:#fff;border:1.5px solid var(--line);border-radius:var(--radius);padding:34px 28px;display:flex;flex-direction:column}
-  .plan.feat{border-color:var(--teal);box-shadow:var(--shadow);position:relative;transform:scale(1.03)}
-  .plan .badge{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:var(--coral);color:#fff;font-size:.74rem;font-weight:700;padding:6px 16px;border-radius:999px;white-space:nowrap}
-  .plan .pname{font-weight:700;color:var(--teal);font-size:1.05rem}
-  .plan .ptag{color:var(--slate);font-size:.86rem;margin-top:4px;min-height:38px}
-  .plan .pp{font-size:2.4rem;font-weight:900;margin:14px 0 2px}
-  .plan .pp small{font-size:.92rem;color:var(--slate);font-weight:500}
-  .plan ul{list-style:none;margin:18px 0 26px;display:flex;flex-direction:column;gap:11px}
-  .plan li{font-size:.94rem;color:var(--ink);display:flex;gap:9px;align-items:flex-start}
-  .plan li:before{content:"✓";color:var(--teal);font-weight:900;flex:none}
-  .plan .btn{width:100%;justify-content:center;margin-top:auto}
-  .price-note{text-align:center;color:var(--slate);margin-top:26px;font-size:.95rem}
-  .price-note b{color:var(--teal)}
-
-  /* faq */
-  .faq{background:var(--bg-soft)}
-  .faq-list{max-width:760px;margin:0 auto}
-  details{background:#fff;border:1px solid var(--line);border-radius:16px;margin-bottom:14px;overflow:hidden}
-  summary{cursor:pointer;padding:20px 24px;font-weight:700;font-size:1.04rem;list-style:none;display:flex;justify-content:space-between;align-items:center}
-  summary::-webkit-details-marker{display:none}
-  summary:after{content:"+";color:var(--teal);font-size:1.5rem;font-weight:400;transition:.2s}
-  details[open] summary:after{transform:rotate(45deg)}
-  details p{padding:0 24px 22px;color:var(--slate)}
-
-  /* final cta */
-  .cta-final{background:linear-gradient(135deg,var(--teal-dark),var(--teal));color:#fff;text-align:center;border-radius:0}
-  .cta-final h2{font-size:2.3rem;font-weight:900}
-  .cta-final p{opacity:.92;margin:16px auto 30px;max-width:560px;font-size:1.1rem}
-  .cta-final .btn-primary{background:#fff;color:var(--teal);box-shadow:0 14px 30px -12px rgba(0,0,0,.4)}
-  .cta-final .btn-primary:hover{background:#fff;color:var(--teal-dark)}
-
-  footer{background:var(--ink);color:#9FB4B1;padding:46px 0;font-size:.9rem}
-  .foot-in{display:flex;justify-content:space-between;flex-wrap:wrap;gap:18px;align-items:center}
-  footer .logo{color:#fff}
-  footer .logo span{color:var(--coral)}
-</style>
-</head>
-<body>
-
-<nav>
-  <div class="wrap nav-in">
-    <div class="logo">奧科希 <span>AEL.</span></div>
-    <div class="nav-links">
-      <a href="#modules">服務</a>
-      <a href="#work">作品</a>
-      <a href="#price">方案</a>
-      <a href="#faq">常見問題</a>
-      <a href="/blog/">部落格</a>
-      <a href="https://line.me/ti/p/~austin2866" target="_blank" rel="noopener" class="btn btn-primary nav-cta">預約免費諮詢</a>
-    </div>
-  </div>
-</nav>
-
-<!-- HERO -->
-<header class="hero">
-  <div class="wrap hero-grid">
-    <div>
-      <span class="eyebrow">免費建置 · 只收維護月費</span>
-      <h1>免費幫您的店<br>做一個<em>專業網站</em></h1>
-      <p class="lead">金流收款、線上訂位、商品上下架全包。您只要顧好生意，<b>網路上的事，我們全包。</b></p>
-      <div class="hero-cta">
-        <a href="https://line.me/ti/p/~austin2866" target="_blank" rel="noopener" class="btn btn-primary">預約免費諮詢 →</a>
-        <a href="#work" class="btn btn-ghost">看實際作品</a>
-      </div>
-      <div class="hero-trust">
-        <span><svg class="chk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><b>0 元</b>建置費</span>
-        <span><svg class="chk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>最快 <b>7 天</b>上線</span>
-        <span><svg class="chk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>不用懂技術</span>
-      </div>
-    </div>
-    <div class="mock">
-      <div class="laptop">
-        <div class="bar"><span class="dot d1"></span><span class="dot d2"></span><span class="dot d3"></span></div>
-        <div class="scr">
-          <div class="scr-hero">
-            <small>阿姨的家常麵店</small>
-            <h4>古早味．現點現做</h4>
-            <p>用料實在，三代相傳的好味道</p>
-            <span class="scr-pill">立即線上訂位 →</span>
-          </div>
-          <div class="scr-menu">
-            <div class="menu-card"><div class="img"></div><b>招牌牛肉麵</b><span>$180</span></div>
-            <div class="menu-card"><div class="img"></div><b>古早味滷肉飯</b><span>$45</span></div>
-            <div class="menu-card"><div class="img"></div><b>燙青菜</b><span>$40</span></div>
-            <div class="menu-card"><div class="img"></div><b>綜合滷味</b><span>$90</span></div>
-          </div>
-        </div>
-      </div>
-      <div class="phone">
-        <div class="pscr">
-          <div class="ptop">阿姨的家常麵店<br><span style="opacity:.8">線上訂位</span></div>
-          <div class="pbtn">選擇時段 ▾</div>
-          <div class="prow"></div><div class="prow"></div><div class="prow" style="width:60%"></div>
-          <div class="pbtn" style="background:#0F766E">確認訂位</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</header>
-
-<!-- PAIN -->
-<section class="pain" id="pain">
-  <div class="wrap">
-    <div class="sec-head center">
-      <h2>沒有網站，您正在流失客人</h2>
-      <p>客人都先上網查，查不到您，就去了別家。</p>
-    </div>
-    <div class="grid-3">
-      <div class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/><path d="M9 9l4 4M13 9l-4 4"/></svg></div><h3>客人想訂位，找不到您</h3><p>滿手客人想預約，卻只能打電話、漏接、記錯——生意就這樣溜走。</p></div>
-      <div class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 8h6M9 12h6M9 16h3"/></svg></div><h3>沒有線上菜單／商品頁</h3><p>新客不知道你賣什麼、多少錢，只能靠路過，回頭客也留不住。</p></div>
-      <div class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.6 1.6 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.6 1.6 0 0 0-1.8-.3 1.6 1.6 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.6 1.6 0 0 0-1-1.5 1.6 1.6 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.6 1.6 0 0 0 .3-1.8 1.6 1.6 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.6 1.6 0 0 0 1.5-1 1.6 1.6 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.6 1.6 0 0 0 1.8.3H9a1.6 1.6 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.6 1.6 0 0 0 1 1.5 1.6 1.6 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.6 1.6 0 0 0-.3 1.8V9a1.6 1.6 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.6 1.6 0 0 0-1.5 1z"/></svg></div><h3>想自己架站？太複雜</h3><p>平台一堆設定、金流要串、圖要修——光研究就耗掉一整週還做不完。</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- MODULES -->
-<section id="modules">
-  <div class="wrap">
-    <div class="sec-head center">
-      <span class="eyebrow">三大模組</span>
-      <h2>一個網站，把生意需要的全做好</h2>
-      <p>不是樣板，是真的能收錢、能訂位、能管商品的完整網站。</p>
-    </div>
-    <div class="grid-3">
-      <div class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20M6 15h4"/></svg></div><h3>金流收款</h3><p>線上刷卡、超商付款、ATM 轉帳，我們幫您串好，客人下單立即付款，錢直接進您的帳戶。</p></div>
-      <div class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M3 9h18M8 2v4M16 2v4"/></svg></div><h3>線上訂位</h3><p>客人手機一鍵訂位、選時段，自動通知您，不再漏接電話、不再記錯本子。</p></div>
-      <div class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8l-9-5-9 5v8l9 5 9-5V8z"/><path d="M3 8l9 5 9-5M12 13v8"/></svg></div><h3>商品上下架</h3><p>菜單、商品您自己就能更新，賣完按一下下架，新品隨時上，完全不用找工程師。</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- STEPS -->
-<section style="background:var(--bg-soft)">
-  <div class="wrap">
-    <div class="sec-head center"><h2>三步驟，輕鬆上線</h2><p>您幾乎不用做什麼，剩下的交給我們。</p></div>
-    <div class="steps">
-      <div class="step"><div class="n"></div><h3>免費諮詢</h3><p>聊聊您的店、想要什麼功能，我們幫您看需求，完全免費。</p></div>
-      <div class="step"><div class="n"></div><h3>我們免費幫您做</h3><p>設計、金流、訂位、商品全幫您搞定，最快 7 天就能上線。</p></div>
-      <div class="step"><div class="n"></div><h3>上線後付月費</h3><p>網站持續由我們維護更新，您只付維護月費，安心顧生意。</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- PORTFOLIO -->
-<section class="port" id="work">
-  <div class="wrap">
-    <div class="sec-head center"><span class="eyebrow">實際作品</span><h2>各行各業，都能做得漂亮</h2></div>
-    <div class="grid-3">
-      <a class="port-card" href="demos/restaurant.html" target="_blank"><div class="thumb"><img src="https://loremflickr.com/700/450/steak?lock=10" alt="餐廳網站範例 — 線上訂位、菜單"><span class="tag">餐廳 · 訂位</span></div><div class="body"><h3>炙 · 鐵板割烹</h3><p>高級餐廳形象站 + 線上訂位，質感拉滿。</p></div></a>
-      <a class="port-card" href="demos/shop.html" target="_blank"><div class="thumb"><img src="https://loremflickr.com/700/450/espresso,latteart?lock=38" alt="電商網站範例 — 線上金流、商品上下架"><span class="tag">電商 · 金流</span></div><div class="body"><h3>沃 WÒ 精品咖啡</h3><p>線上刷卡下單、商品自助上下架，外縣市也能賣。</p></div></a>
-      <a class="port-card" href="demos/stay.html" target="_blank"><div class="thumb"><img src="https://loremflickr.com/700/450/cabin,forest?lock=29" alt="民宿訂房網站範例"><span class="tag">預約 · 民宿</span></div><div class="body"><h3>山隅 The Nook</h3><p>精品民宿訂房站，大片裝潢實景超吸睛。</p></div></a>
-    </div>
-  </div>
-</section>
-
-<!-- PRICING -->
-<section id="price">
-  <div class="wrap">
-    <div class="sec-head center"><span class="eyebrow">收費方案</span><h2>建置免費，只收維護月費</h2><p>依您的店規模選方案，隨時可升級。</p></div>
-    <div class="price-grid">
-      <div class="plan">
-        <div class="pname">基本</div>
-        <div class="ptag">小店、小餐廳、小吃店</div>
-        <div class="pp">$5,000<small> / 月</small></div>
-        <ul>
-          <li>專業形象官網</li>
-          <li>線上菜單／型錄</li>
-          <li>Google 地圖與營業資訊</li>
-          <li>聯絡／詢問表單</li>
-        </ul>
-        <a href="https://line.me/ti/p/~austin2866" target="_blank" rel="noopener" class="btn btn-ghost">選這個方案</a>
-      </div>
-      <div class="plan feat">
-        <div class="badge">最受歡迎</div>
-        <div class="pname">進階</div>
-        <div class="ptag">電商、有訂位需求的店家</div>
-        <div class="pp">$12,000<small> / 月</small></div>
-        <ul>
-          <li>包含「基本」全部功能</li>
-          <li>線上金流收款</li>
-          <li>線上訂位系統</li>
-          <li>商品自助上下架</li>
-        </ul>
-        <a href="https://line.me/ti/p/~austin2866" target="_blank" rel="noopener" class="btn btn-primary">選這個方案</a>
-      </div>
-      <div class="plan">
-        <div class="pname">旗艦</div>
-        <div class="ptag">醫美、多店餐飲、品牌電商、B2B</div>
-        <div class="pp">$20,000<small> / 月</small></div>
-        <ul>
-          <li>包含「進階」全部功能</li>
-          <li>全客製化設計</li>
-          <li>網站代操與更新</li>
-          <li>數據報表 + 優先支援</li>
-        </ul>
-        <a href="https://line.me/ti/p/~austin2866" target="_blank" rel="noopener" class="btn btn-ghost">選這個方案</a>
-      </div>
-    </div>
-    <p class="price-note">所有方案皆 <b>0 元建置費</b>，合約期 12 個月 · 金流款項直接進您自己的帳戶</p>
-  </div>
-</section>
-
-<!-- FAQ -->
-<section class="faq" id="faq">
-  <div class="wrap">
-    <div class="sec-head center"><h2>常見問題</h2></div>
-    <div class="faq-list">
-      <details open><summary>網站做好之後是誰的？</summary><p>網站是為您的店打造的，內容、品牌、網域都屬於您。我們負責設計、建置與後續維護。</p></details>
-      <details><summary>客人付款的錢會進誰的帳戶？</summary><p>直接進「您自己」的金流帳戶（例如綠界）。我們只幫您把系統串好，完全不經手您的錢，安全又透明。</p></details>
-      <details><summary>真的不用先付建置費嗎？</summary><p>對，建置 0 元。我們只收每月維護費，網站持續更新、出問題隨時找我們，合約期為 12 個月。</p></details>
-      <details><summary>多久可以上線？</summary><p>一般店家最快 7 天，功能較多的約 2～3 週。我們會先做好給您看，滿意再上線。</p></details>
-      <details><summary>我完全不懂電腦，可以嗎？</summary><p>完全沒問題！這正是我們存在的理由——技術的事全交給我們，您只要專心做生意。</p></details>
-    </div>
-  </div>
-</section>
-
-<!-- FINAL CTA -->
-<section class="cta-final" id="contact">
-  <div class="wrap">
-    <h2>先免費聊聊，看您的店需要什麼</h2>
-    <p>不推銷、不收費。我們先幫您做一版看看，喜歡再合作。</p>
-    <a href="https://line.me/ti/p/~austin2866" target="_blank" rel="noopener" class="btn btn-primary">用 LINE 預約諮詢 →</a>
-  </div>
-</section>
-
-<footer>
-  <div class="wrap foot-in">
-    <div>
-      <div class="logo">奧科希 <span>AEL.</span></div>
-      <div style="margin-top:8px">奧科希股份有限公司 ｜ 免費幫台灣店家做專業網站，只收維護月費。</div>
-    </div>
-    <div style="display:flex;flex-direction:column;gap:6px;text-align:right">
-      <a href="/blog/" style="color:#9DECE0;text-decoration:none">部落格</a>
-      <span>© 2026 奧科希股份有限公司 AEL · aeltech.network</span>
-    </div>
-  </div>
-</footer>
-
-</body>
+  <body>
+    <div id="root"></div>
+  </body>
 </html>
