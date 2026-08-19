@@ -1,0 +1,19 @@
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">AEL Technology Icon</title>
+  <desc id="desc">A premium cobalt portal A icon representing a digital storefront gateway.</desc>
+  <defs>
+    <linearGradient id="portalBlue" x1="76" y1="48" x2="186" y2="214" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2446A8"/>
+      <stop offset="1" stop-color="#1F4E8C"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="16" y="16" width="224" height="224" rx="28" fill="#F7F9FC"/>
+  <path d="M58 210V52H198V210" stroke="#0D1B2A" stroke-width="16" stroke-linecap="square" stroke-linejoin="miter"/>
+  <path d="M82 210L128 68L174 210" stroke="url(#portalBlue)" stroke-width="18" stroke-linecap="square" stroke-linejoin="miter"/>
+  <path d="M103 153H157" stroke="url(#portalBlue)" stroke-width="18" stroke-linecap="square"/>
+  <path d="M70 64H102" stroke="#2446A8" stroke-width="10" stroke-linecap="square"/>
+  <rect x="176" y="54" width="14" height="14" fill="#2446A8"/>
+  <rect x="197" y="54" width="14" height="14" fill="#3B6F9E"/>
+  <rect x="197" y="75" width="14" height="14" fill="#2446A8"/>
+</svg>
