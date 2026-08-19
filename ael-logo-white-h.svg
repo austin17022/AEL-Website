@@ -1,0 +1,17 @@
+<svg width="900" height="200" viewBox="0 0 900 200" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t d">
+  <title id="t">AEL Technology 白色橫式 Logo</title>
+  <desc id="d">深色背景用的白色 AEL Technology 橫式標誌（Cobalt Portal A）。</desc>
+  <g transform="translate(20 16)">
+    <!-- 門形外框 -->
+    <path d="M40 145V35H136V145" stroke="#FFFFFF" stroke-width="11" stroke-linecap="square" stroke-linejoin="miter"/>
+    <!-- A -->
+    <path d="M56 145L84 45L119 145" stroke="#FFFFFF" stroke-width="13" stroke-linecap="square" stroke-linejoin="miter"/>
+    <path d="M72 105H107" stroke="#FFFFFF" stroke-width="13" stroke-linecap="square"/>
+    <!-- 鈷藍點綴 -->
+    <rect x="122" y="38" width="9" height="9" fill="#6E9BE0"/>
+    <rect x="136" y="38" width="9" height="9" fill="#9DB8E6"/>
+    <rect x="136" y="52" width="9" height="9" fill="#6E9BE0"/>
+  </g>
+  <text x="210" y="105" fill="#FFFFFF" font-family="'Avenir Next', Inter, 'Helvetica Neue', Arial, sans-serif" font-size="78" font-weight="700" letter-spacing="8">AEL</text>
+  <text x="216" y="154" fill="#9DB8E6" font-family="'Avenir Next', Inter, 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="600" letter-spacing="5">TECHNOLOGY</text>
+</svg>
